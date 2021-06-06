@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="gossip head css.css">
+    
+  </head>
+     
+    <body>
+
+      <div class="whitetop">
+
+      </div>
+
+      <div class="header">
+
+        <div class="title">
+          <h2>THE </h2>
+             <h1>STUDENTS DAILY </h1> 
+      </div>
+
+      <div class="logoclick">
+        <a href="gossip head.html"> <img src="pictures/gjh logo.png" style="height: 250px; width: 250px;"> </a>
+      </div>
+
+      </div>
+
+      <div class="whitebottom">
+
+        <div class="nav1">
+          <a href="news.html"><h3>NEWS</h3> </a>
+        </div>
+
+        <div class="nav2">
+          <a href=""> <h3>RELATIONSHIPS</h3> </a>
+        </div>
+
+        <div class="nav3">
+          <a href=""> <h3>FAME</h3> </a>  
+        </div>
+
+        <div class="nav4">
+          <a href=""> <h3>FOOD</h3> </a>
+        </div>
+
+        <div class="nav5">
+          <a href=""> <h3>QUIZZES</h3> </a>
+        </div>
+
+        <div class="nav6">
+          <a href=""> <h3>SURVEYS</h3> </a>
+        </div>
+
+      </div>
+
+
+      <div class="frontimg">
+        <img src="pictures/jurh.png">
+
+        <div class="fronttextrec" style="border: 5px solid rgb(23, 141, 19);">
+           
+          <div class="rectangle">
+            <div class="topheadlines">
+              <h4>TOP HEADLINES </h4> 
+            </div>
+          </div> 
+
+          <div class="firstpic">
+            <img src= "pictures/pic1.png" style="height: 200px; width: 500px;">
+          </div>
+
+          <div class="firsttext">
+            <a href=""> <h4>THESE BAKED GOOD WILL MAKE YOUR <br>
+              GYNECOLOGIST'S MOUTH WATER!!! </h4></a>
+          </div>
+
+          <div class="secondtext">
+            
+            <a href=""> <h4>LOCAL MATHS TEACHER <BR> OR SECRET SINGING <BR> SENSATION?</h4> </a>
+          </div>
+
+          <div class="secondpic">
+            <img src="pictures/pic 2.png" style="height: 100px; width: 200px;">
+
+          </div>
+
+          <div class="thirdtext">
+
+            <a href=""><h4> RELATIONSHIPS, FRIENDS AND FRENEMIES...</h4></a>
+
+          </div>
+         
+
+          
+
+          <div class="thirdpic">
+            <img src="pictures/frene.png" style="height: 100px; width: 200px;">
+            
+          </div>
+
+        
+
+        </div>
+
+
+      </div>
+
+     
+
+
+      <div class="tilte2">
+        <h2>ČASOPIS GJH. TEN NAJLEPŠÍ ČASOPIS NA GJH</h2>
+      </div>
+
+
+      <div class="paragrapheins">
+        <p>Welcome to the first issue of <br>
+          The Students Daily. The Students Daily is the <br>
+          leading GJH digital media company, which <br>
+          provides only the most relevant juicy scoops <br>
+          from the school of GJH. Ranging from social relationships<br>
+          all the way to quizzes the reader can take, <br>
+          The Students Daily is the pinnacle of good tabloidism. <br>
+          With new stories coming every day, you ought to find <br>
+          something that'll catch your eye!
+        
+        </p>
+      </div>
+
+      <div class="paragraphzwei">
+        <p> We operate a multi million dollar company <br>
+          headquartered in Bratislava, Slovakia. With offices <br>
+          stationed in nearly every country, we are sure to <br>
+          receive exclusive stories from all over the world. <br>
+          But of course, we didn't start with all these perks. <br>
+          The Students Daily began with two friends in just <br>
+          your ordinary classroom with one goal they wanted to achieve. <br> 
+          They wanted to share stories with the entirety of GJH. <br>
+          Two weeks later, their business is booming. #nevergiveup <br>
+
+          
+        
+        
+        </p>
+      </div>
+      
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pictures/gjh 1.jpg" style="width:100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pictures/gjh 2.0.png" style="width:100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pictures/gjh 4.0.png" style="width:100%">
+         
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="margin-left: 160px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+      </script>
+
+      <div class="footer">
+        <h3> Learn More</h3>
+
+        <div class="ninka">
+          <p> i will let ninka write her part <br>
+            because idk what i'd put instead <br>
+            so whilst I wait here patiently <br>
+            i'll write a poem without any dread <br>
+          </p>
+
+        </div>
+
+        <div class="yumi">
+          <p> Hello! My name is Yumi Bezekova. <br>
+            I'm the second half of The Students Daily <br>
+            and I really enjoyed creating this tabloid. <br>
+            We hope you enjoy reading our work of art /hj <br>
+          </p>
+
+        </div>
+
+        <div class="socials">
+          <div class="ingyumi">
+
+            <a href="https://www.instagram.com/drawingwithyumi/">
+
+              <img src="pictures/instagram 1.png" style="width:40px; height:40px;">
+               
+            
+            </a>
+
+          </div>
+
+          <div class="ingninka">
+
+            <a href="https://www.instagram.com/nina_barabasova14/">
+
+              <img src="pictures/instagram 1.png" style="width:40px; height:40px;">
+               
+            
+            </a>
+
+
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="final">
+
+        <div class="yuh">
+            <h4>Created by Yumi Bezeková and Nina Barabásová©</h4> 
+        </div>
+    </div>
+
+      
+
+     
+
+
+
+
+
+    
+    
+   
+
+
+
+    </body>
+
+
+</html>
