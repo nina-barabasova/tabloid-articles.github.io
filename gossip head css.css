@@ -32,7 +32,7 @@
 
 .logoclick{
     position: absolute;
-    margin-left: 1000px;
+    margin-left: 1250px;
 
 }
 
@@ -147,9 +147,13 @@ a:hover{
 .frontimg{
     padding: 15px;
     margin-top: 20px;
-    position:relative;
-    
-
+    position:relative;;
+}    
+.mainimg{
+        padding: 15px;
+        margin-top: 20px;
+        position: relative;;
+        
 }
 
 .firsttext{
@@ -376,3 +380,13 @@ a:hover{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin-bottom: 10px;
         }
+        .articles{
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            margin-top: 40px;
+            text-align: left;
+            margin-left: 30px;
+             position: absolute;
+            
+            }
